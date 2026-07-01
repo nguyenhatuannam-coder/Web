@@ -138,7 +138,7 @@ async def main():
     async with aiohttp.ClientSession() as session:
         tasks = []
 
-        for i in range(100):  # 100 bot
+        for i in range(100):  
             tasks.append(bot(session, i))
 
         await asyncio.gather(*tasks)
