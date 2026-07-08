@@ -15,10 +15,9 @@ CREATE TABLE IF NOT EXISTS users(
 """)
 conn.commit()
 
-genai.configure(api_key="AQ.Ab8RN6IVljXFZ2vluiGRBN_RwwgRXF3mVoZO4MC8hIpICoexaA")
+genai.configure(api_key="AQ.Ab8RN6LsWgvkk9SpRIffRwW6rs9VcXbQPcGrXBpbO9pWvo_9LQ")
 model = genai.GenerativeModel("gemini-2.5-flash")
 
-# ===== Hàm =====
 def register(username, password):
     try:
         c.execute(
